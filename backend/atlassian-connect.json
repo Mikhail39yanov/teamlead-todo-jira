@@ -1,0 +1,27 @@
+{
+  "key": "plugin",
+  "name": "Teamlead TodoList",
+  "description": "todo",
+  "baseUrl": "{{localBaseUrl}}",
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed"
+  },
+  "scopes": ["READ"],
+  "apiMigrations": {
+    "signed-install": true
+  },
+  "modules": {
+    "generalPages": [
+      {
+        "key": "todo",
+        "name": {
+          "value": "TodoList Tasks"
+        },
+        "url": "/todo-list"
+      }
+    ]
+  }
+}
