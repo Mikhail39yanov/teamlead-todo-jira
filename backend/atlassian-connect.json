@@ -1,5 +1,5 @@
 {
-  "key": "plugin",
+  "key": "my-app",
   "name": "Teamlead TodoList",
   "description": "todo",
   "baseUrl": "{{localBaseUrl}}",
@@ -7,7 +7,7 @@
     "type": "jwt"
   },
   "lifecycle": {
-    "installed": "/installed"
+    "installed": "installed"
   },
   "scopes": ["READ"],
   "apiMigrations": {
@@ -16,7 +16,7 @@
   "modules": {
     "generalPages": [
       {
-        "key": "todo",
+        "key": "todo-list",
         "name": {
           "value": "TodoList Tasks"
         },
